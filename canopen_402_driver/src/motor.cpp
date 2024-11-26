@@ -380,6 +380,7 @@ bool Motor402::handleInit()
     return true;  // homing not supported
   }
 
+  /*
   HomingMode * homing = dynamic_cast<HomingMode *>(m.get());
 
   if (!homing)
@@ -399,6 +400,7 @@ bool Motor402::handleInit()
     std::cout << "Homing failed" << std::endl;
     return false;
   }
+  */
   RCLCPP_INFO(rclcpp::get_logger("canopen_402_driver"), "Init: Switch no mode");
   if (!switchMode(MotorBase::No_Mode))
   {

@@ -167,7 +167,7 @@ struct Cia402Data
         driver->set_target(target_torque);
         break;
       default:
-        RCLCPP_INFO(rclcpp::get_logger("robot_system_interface"), "Mode not supported");
+        RCLCPP_INFO(rclcpp::get_logger("robot_system_interface"), "Mode %i not supported", mode);
     }
   }
 
